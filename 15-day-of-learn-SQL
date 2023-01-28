@@ -1,0 +1,147 @@
+/*
+Enter your query here.
+Please append a semicolon ";" at the end of the query and enter your query in a single line to avoid error.
+*/
+/*#15 days (1mac2016-15mac2016)
+#print total number of unique hackers who made at least 1 submission each day (starting on the first day of the contest)
+#find the hacker_id and hacker_name where maximum number of submissions each day*/
+
+/*Output Goal:
+1. Submission_Date
+2. number of unique hackers who made submission EACH day
+3. hacker_id of hacker who made max number of submissions
+4. hacker_name = hacker_id
+
+order condition for 3&4:
+1. max submission, 2. lowest hacker_id
+
+1st approach:
+Do solution for 1st of march*/
+
+/*select count(distinct hacker_id), submission_date
+from submissions
+group by submission_date*/
+
+/*select  hacker_id, count(hacker_id) 
+from submissions
+where submission_date like '2016-03-01'
+group by hacker_id
+order by count(hacker_id) desc*/
+
+/*select 
+       submission_date, 
+       count(distinct hacker_id) 
+       /*hacker_id, 
+       score*/
+from submissions
+where submission_date like '2016-03-01'
+group by submission_date
+order by submission_date*/
+
+/*select 
+    row_number() over(partition by s.submission_date order by count(s.hacker_id) desc, s.hacker_id asc) as Row#,
+    s.hacker_id,
+    s.submission_date,
+    name
+from submissions s
+join hackers h 
+on h.hacker_id = s.hacker_id
+group by submission_date, s.hacker_id, name;*/
+
+/*with max_hacker as(
+select 
+    row_number() over(partition by s.submission_date order by count(s.hacker_id) desc, s.hacker_id asc) as Row#,
+    s.hacker_id,
+    s.submission_date,
+    name
+from submissions s
+join hackers h 
+on h.hacker_id = s.hacker_id
+group by submission_date, s.hacker_id, name
+)
+
+select 
+       s.submission_date, 
+       count(distinct s.hacker_id),
+       mh.hacker_id, 
+       mh.name
+from submissions s
+join max_hacker mh
+on mh.submission_date = s.submission_date and Row#=1
+--where s.submission_date like '2016-03-01'
+group by s.submission_date, mh.hacker_id, mh.name
+order by s.submission_date*/
+
+declare @consistent_hackers table
+(hacker_id int,
+submission_date date
+);
+
+declare @count_hackers table
+(hacker_id int,
+submission_date date
+);
+
+declare @subdate date;
+declare @remainingdate date;
+
+insert into @consistent_hackers
+select
+    hacker_id,
+    submission_date
+from submissions
+where submission_date like '2016-03-01';
+
+set @subdate = '2016-03-01';
+set @remainingdate = '2016-03-01';
+
+while @subdate < '2016-03-15'
+begin
+
+set @subdate = dateadd(day,1,@subdate);
+
+insert into @consistent_hackers
+select
+    s.hacker_id,
+    s.submission_date
+from submissions s
+join @consistent_hackers ch
+on ch.hacker_id = s.hacker_id and ch.submission_date like @remainingdate
+where s.submission_date like @subdate;
+
+set @remainingdate = dateadd(day,1,@remainingdate);
+
+end;
+
+insert into @count_hackers
+select
+  count(distinct hacker_id),
+  submission_date
+from @consistent_hackers
+group by submission_date;
+
+with max_hacker as(
+select 
+    row_number() over(partition by s.submission_date order by count(s.hacker_id) desc, s.hacker_id asc) as Row#,
+    s.hacker_id,
+    s.submission_date,
+    name
+from submissions s
+join hackers h 
+on h.hacker_id = s.hacker_id
+group by submission_date, s.hacker_id, name
+)
+
+select 
+       s.submission_date, 
+       ch.hacker_id,
+       mh.hacker_id, 
+       mh.name
+from submissions s
+join max_hacker mh
+on mh.submission_date = s.submission_date and Row#=1
+join @count_hackers ch
+on ch.submission_date = s.submission_date
+--where s.submission_date like '2016-03-01'
+group by s.submission_date, mh.hacker_id, mh.name, ch.hacker_id
+order by s.submission_date
