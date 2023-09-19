@@ -1,0 +1,302 @@
+
+**** Trace file opened at 2023-08-08 00:04:13.923821 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 192.168.0.123, IPv6 address: fe80::55c5:3b3:47e7:72b0
+
+2023-08-08 00:04:13.937185 [38712] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+2023-08-08 00:04:19.411419 [38712] >> Error entry
+	[Handle: 1407509357232	ConvID: 	SysID: 	SysNr: 	Target: 	User: 	Codepage: 4103]
+	RfcCommunicationException: Key: RFC_COMMUNICATION_FAILURE, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) on local host KL-5CG2140DVN-N with Unicode
+ERROR       hostname 'MBSAPDEV01' unknown
+TIME        Tue Aug 08 00:04:19 2023
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      D:/depot/bas/753_REL/src/base/ni/ninti.c
+LINE        898
+DETAIL      NiPGetHostByName: 'MBSAPDEV01' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+
+**** Trace file opened at 2023-08-08 00:05:18.670884 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 192.168.0.123, IPv6 address: fe80::ebe8:8a1b:9838:42de
+
+2023-08-08 00:05:18.684450 [19460] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-08-08 00:10:01.747455 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 192.168.0.123, IPv6 address: fe80::ebe8:8a1b:9838:42de
+
+2023-08-08 00:10:01.760938 [30520] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-08-08 00:12:07.438389 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 192.168.0.123, IPv6 address: fe80::ebe8:8a1b:9838:42de
+
+2023-08-08 00:12:07.452151 [32136] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-08-08 00:23:29.383281 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 192.168.0.123, IPv6 address: fe80::ebe8:8a1b:9838:42de
+
+2023-08-08 00:23:29.396068 [39620] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-08-08 09:01:29.015219 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::2fed:fc6c:408a:be52
+
+2023-08-08 09:01:29.029823 [29084] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-13 09:34:28.846683 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::2fed:fc6c:408a:be52
+
+2023-09-13 09:34:28.860610 [18184] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-13 09:34:41.593346 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::2fed:fc6c:408a:be52
+
+2023-09-13 09:34:41.607850 [27152] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-13 09:34:58.617074 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::2fed:fc6c:408a:be52
+
+2023-09-13 09:34:58.631803 [31020] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-13 09:46:14.812386 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::2fed:fc6c:408a:be52
+
+2023-09-13 09:46:14.827126 [36656] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-13 09:47:17.130616 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::2fed:fc6c:408a:be52
+
+2023-09-13 09:47:17.144972 [23824] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-13 09:47:39.260144 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::2fed:fc6c:408a:be52
+
+2023-09-13 09:47:39.274038 [13992] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-13 09:53:04.313718 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::2fed:fc6c:408a:be52
+
+2023-09-13 09:53:04.328088 [25192] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-13 09:59:11.869507 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::2fed:fc6c:408a:be52
+
+2023-09-13 09:59:11.882916 [32516] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-13 10:01:26.027957 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::2fed:fc6c:408a:be52
+
+2023-09-13 10:01:26.042468 [31680] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-13 10:05:07.286912 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::2fed:fc6c:408a:be52
+
+2023-09-13 10:05:07.302185 [02072] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-13 10:10:34.447318 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::2fed:fc6c:408a:be52
+
+2023-09-13 10:10:34.461631 [25400] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-13 10:12:21.773239 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::2fed:fc6c:408a:be52
+
+2023-09-13 10:12:21.788541 [19228] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-13 10:12:32.367503 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::2fed:fc6c:408a:be52
+
+2023-09-13 10:12:32.381567 [34572] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-13 10:12:51.862398 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::2fed:fc6c:408a:be52
+
+2023-09-13 10:12:51.876363 [30380] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-18 09:47:44.840443 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::b04b:2fe:8220:5876
+
+2023-09-18 09:47:44.855391 [15532] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-18 09:52:52.223547 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::b04b:2fe:8220:5876
+
+2023-09-18 09:52:52.237960 [19880] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-18 09:53:47.211241 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::b04b:2fe:8220:5876
+
+2023-09-18 09:53:47.225764 [20288] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-18 09:54:36.969042 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::b04b:2fe:8220:5876
+
+2023-09-18 09:54:36.983521 [03876] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-18 12:41:29.733128 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::b04b:2fe:8220:5876
+
+2023-09-18 12:41:29.747772 [36576] >> Info entry
+	Searching for config file sapnwrfc.ini
+
+
+**** Trace file opened at 2023-09-18 12:42:37.720771 UTC+08:00 (Malay Peninsula Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 5, Compiled on Aug 20 2019 15:06:49
+ CPIC library: 753.2019.02.22 version 3, NI library: 40, Kernel Release: 753 Patch Level 500
+ Current working directory: C:\Users\syakir1937\virtualenv-project, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 140 Step 1), Operating_system: Windows NT 10.0
+ Hostname: KL-5CG2140DVN-N, IP address: 172.16.50.15, IPv6 address: fe80::b04b:2fe:8220:5876
+
+2023-09-18 12:42:37.734994 [15920] >> Info entry
+	Searching for config file sapnwrfc.ini
+
