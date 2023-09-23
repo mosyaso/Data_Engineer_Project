@@ -2,11 +2,11 @@ from pyrfc import Connection, ABAPApplicationError, ABAPRuntimeError, LogonError
 from configparser import ConfigParser
 from pprint import PrettyPrinter
 
-ASHOST='MBSAPDEV01'
-CLIENT='800'
-SYSNR='00'
-USER='SCHBASIS'
-PASSWD='m@l@ko77'
+ASHOST='xxxxxxx'
+CLIENT='xxx'
+SYSNR='xx'
+USER='xxxxxxx'
+PASSWD='xxxxxx'
 conn = Connection(ashost=ASHOST, sysnr=SYSNR, client=CLIENT, user=USER, passwd=PASSWD)
 
 try:
