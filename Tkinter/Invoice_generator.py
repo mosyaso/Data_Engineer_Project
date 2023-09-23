@@ -32,13 +32,13 @@ def submit():
 
     def excel_to_csv():
         # Specify the path to the Excel file
-        excel_finance = r"{}\Solar_Billing_Finance.xlsx".format(folder_path)
+        excel_finance = r"{}\Solar_Billing.xlsx".format(folder_path)
 
         # Read the Excel file into a DataFrame
         df = pd.read_excel(excel_finance)
 
         # Specify the path to save the text file
-        text_file = r"{}\Solar_Billing_Finance.csv".format(folder_path)
+        text_file = r"{}\Solar_Billing.csv".format(folder_path)
 
         # Convert DataFrame to text and save as a text file
         #df.to_csv(text_file, sep='\t', index=False, header=None)
@@ -93,17 +93,9 @@ def submit():
         mail_item.Send()
 
     workbooks = [
-        {'input_path': r"{}\Aeon billing.xlsx".format(folder_path), 'output_path': r"{}\Aeon billing.pdf".format(folder_path), 'sheet_names': "Aeon Billing Template"},
-        {'input_path': r"{}\Bill Statement CTRM latest.xlsx".format(folder_path), 'output_path': r"{}\Bill Statement CTRM latest.pdf".format(folder_path), 'sheet_names': "CTRM Billing Template"},
-        {'input_path': r"{}\Bill Statement HTS.xlsx".format(folder_path), 'output_path': r"{}\Bill Statement HTS.pdf".format(folder_path), 'sheet_names': "HTS Billing Template"},
-        {'input_path': r"{}\Bill Statement IHM.xlsx".format(folder_path), 'output_path': r"{}\Bill Statement IHM.pdf".format(folder_path), 'sheet_names': "IHM Billing Template"},
-        {'input_path': r"{}\Bill Statement KYB-UMW.xlsx".format(folder_path), 'output_path': r"{}\Bill Statement KYB-UMW.pdf".format(folder_path), 'sheet_names': "KYB Billing Template"},
-        {'input_path': r"{}\Bill Statement Modenas.xlsx".format(folder_path), 'output_path': r"{}\Bill Statement Modenas.pdf".format(folder_path), 'sheet_names': "Modenas Billing Template"},
-        {'input_path': r"{}\Bill Statement Pusat Mel Nasional.xlsx".format(folder_path), 'output_path': r"{}\Bill Statement Pusat Mel Nasional.pdf".format(folder_path), 'sheet_names': "PMN Billing Template"},
-        {'input_path': r"{}\Bill Statement UMW Aerospace.xlsx".format(folder_path), 'output_path': r"{}\Bill Statement UMW Aerospace.pdf".format(folder_path), 'sheet_names': "UMWA Billing Template"},
-        {'input_path': r"{}\HA billing.xlsx".format(folder_path), 'output_path': r"{}\HA billing.pdf".format(folder_path), 'sheet_names': "HA Billing Template"},
-        {'input_path': r"{}\Johorport Billing.xlsx".format(folder_path), 'output_path': r"{}\Johorport Billing.pdf".format(folder_path), 'sheet_names': "Johorport Billing Template"},
-        {'input_path': r"{}\Northport Billing.xlsx".format(folder_path), 'output_path': r"{}\Northport Billing.pdf".format(folder_path), 'sheet_names': "Northport Billing Template"},
+        {'input_path': r"{}\Customer1.xlsx".format(folder_path), 'output_path': r"{}\Customer1.pdf".format(folder_path), 'sheet_names': "Customer1 Template"},
+        {'input_path': r"{}\Customer2.xlsx".format(folder_path), 'output_path': r"{}\Customer2.pdf".format(folder_path), 'sheet_names': "Customer2 Template"},
+        {'input_path': r"{}\Customer3.xlsx".format(folder_path), 'output_path': r"{}\Customer3.pdf".format(folder_path), 'sheet_names': "Customer3 Template"},
     ]
 
     # Loop through each workbook and convert sheets to PDF
