@@ -19,20 +19,20 @@ from OSIsoft.AF.Data import *
 from OSIsoft.AF.Time import *
 from System.Net import NetworkCredential # by default by window
 
-tbeServerIp = "172.30.10.50"
-tbeServerName = "TBE"
+tbeServerIp = "xxx.xx.xx.xx"
+tbeServerName = "XXX"
 tbeServerUser = "pidemo"  #pidemo only
 
-tbpServerIp = "172.30.10.105"
-tbpServerName = "TBP"
+tbpServerIp = "xxx.xx.xx.xx"
+tbpServerName = "XXX"
 tbpServerUser = "pidemo" #pidemo and piuser
 
-pppServerIp = "192.168.201.8"
-pppServerName = "PPP"
+pppServerIp = "xxx.xx.xx.xx"
+pppServerName = "XXX"
 pppServerUser = "pidemo" #pidemo only
 
-sevServerIp = "192.168.1.88"
-sevServerName = "SEV"
+sevServerIp = "xxx.xx.xx.xx"
+sevServerName = "XXX"
 sevServerUser = "piuser" #pidemo and piuser
 
 def connect_to_Server(serverName, serverUser):
@@ -75,35 +75,33 @@ def get_tag_lastvalue(tagname):
 def collect_data():
     
     connect_to_Server(tbeServerIp, tbeServerUser)
-    tbe_tag = "TBE.U40BAT1XCE031_XQ50"
+    tbe_tag = "XXXXXXX"
     tbe_value = get_tag_lastvalue(tbe_tag)
 
     connect_to_Server(pppServerIp, pppServerUser)
-    ppp_tag = "1AGCI_B:SYS134.PNT"
+    ppp_tag = "XXXXXXX"
     ppp_value = get_tag_lastvalue(ppp_tag)
     
     connect_to_Server(tbpServerIp, tbpServerUser)
-    tbp_tag10 = "TBP.U10.10CGA20EA037XQ00.out"
-    tbp_tag20 = "TBP.U20.20CGA20EA037XQ00.out"
-    tbp_tag30 = "TBP.U30.30CGA20EA037XQ00.out"
+    tbp_tag10 = "XXXXXXX"
+    tbp_tag20 = "XXXXXXX"
+    tbp_tag30 = "XXXXXXX"
     tbp_value10 = get_tag_lastvalue(tbp_tag10)
     tbp_value20 = get_tag_lastvalue(tbp_tag20)
     tbp_value30 = get_tag_lastvalue(tbp_tag30)
 
-    # connect_to_Server(sevServerIp, sevServerUser)
-    # sev_tag1 = "19ADA10CE904_XJ51"
-    # sev_tag2 = "29ADA10CE904_XJ51"
-    # sev_value1 = get_tag_lastvalue(sev_tag1)
-    # sev_value2 = get_tag_lastvalue(sev_tag2)
-    sev_value1 = 0
-    sev_value2 = 0
+    connect_to_Server(sevServerIp, sevServerUser)
+    sev_tag1 = "XXXXXXX"
+    sev_tag2 = "XXXXXXX"
+    sev_value1 = get_tag_lastvalue(sev_tag1)
+    sev_value2 = get_tag_lastvalue(sev_tag2)
 
     #Total Generation 
 
-    plantName = ["TBE", "TBP", "PPP", "SEV"]
-    cityName = ["Kukup", "Kukup", "Seberang Perai", "Lumut"]
-    latitude = [1.3356717429816323, 1.334394459207965, 5.375879372501105, 4.391758944961649]
-    longitude = [103.54243832017674, 103.53333520183257, 100.3739439649467, 100.58828799377798]
+    plantName = ["XXX", "XXX", "XXX", "XXX"]
+    cityName = ["XXX", "XXX", "XXX", "XXX"]
+    latitude = [XXXX, XXXX, XXXX, XXXX]
+    longitude = [XXXX, XXXX, XXXX, XXXX]
     powerGeneration1 = [tbe_value, tbp_value10, ppp_value, sev_value1]
     powerGeneration2 = [0, tbp_value20, 0, sev_value2]
     powerGeneration3 = [0, tbp_value30, 0, 0]
@@ -154,8 +152,8 @@ while True:
     try:
         start_time = time.time()
         now = datetime.strftime(datetime.now(), "%Y-%m-%dT%H:%M:%S%Z")
-        # res = requests.post('https://api.powerbi.com/beta/805b860b-a33a-4e2f-ac69-e9b1c553eff5/datasets/f030eceb-0658-4e60-81d8-821beaa1d30f/rows?experience=power-bi&key=VcxV6l9FNYfyQLA8Vrd8m01Z2rvqNdz3coBew8yZswpdCzJ%2Fy4q2RkVvUlUwnIm9CYoMznIE7f%2B5PcIOnsfVUQ%3D%3D', data=json.dumps(json_data))
-        # print(res.status_code)
+        res = requests.post('https://api.powerbi.com/beta/805b860b-a33a-4e2f-ac69-e9b1c553eff5/datasets/f030eceb-0658-4e60-81d8-821beaa1d30f/rows?experience=power-bi&key=VcxV6l9FNYfyQLA8Vrd8m01Z2rvqNdz3coBew8yZswpdCzJ%2Fy4q2RkVvUlUwnIm9CYoMznIE7f%2B5PcIOnsfVUQ%3D%3D', data=json.dumps(json_data))
+        print(res.status_code)
         # res1 = requests.post('https://api.powerbi.com/beta/805b860b-a33a-4e2f-ac69-e9b1c553eff5/datasets/07af056c-8ff4-4086-b952-3007c491c403/rows?experience=power-bi&key=MrZL5%2BNd5FOJcRjvIaUjPQ%2BbjoSbdPDBZa0GM48mY5WCeiIxUY%2Bqd2vrMPFH3%2FZCHQshPtOtj3Ztn8oXLAZ5ZQ%3D%3D', data=json.dumps(json_data1))
         # print(res1.status_code)
         # print(json_data)
