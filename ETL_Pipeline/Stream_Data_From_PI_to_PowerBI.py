@@ -152,9 +152,9 @@ while True:
     try:
         start_time = time.time()
         now = datetime.strftime(datetime.now(), "%Y-%m-%dT%H:%M:%S%Z")
-        res = requests.post('https://api.powerbi.com/beta/805b860b-a33a-4e2f-ac69-e9b1c553eff5/datasets/f030eceb-0658-4e60-81d8-821beaa1d30f/rows?experience=power-bi&key=VcxV6l9FNYfyQLA8Vrd8m01Z2rvqNdz3coBew8yZswpdCzJ%2Fy4q2RkVvUlUwnIm9CYoMznIE7f%2B5PcIOnsfVUQ%3D%3D', data=json.dumps(json_data))
+        res = requests.post('powerBI API', data=json.dumps(json_data))
         print(res.status_code)
-        # res1 = requests.post('https://api.powerbi.com/beta/805b860b-a33a-4e2f-ac69-e9b1c553eff5/datasets/07af056c-8ff4-4086-b952-3007c491c403/rows?experience=power-bi&key=MrZL5%2BNd5FOJcRjvIaUjPQ%2BbjoSbdPDBZa0GM48mY5WCeiIxUY%2Bqd2vrMPFH3%2FZCHQshPtOtj3Ztn8oXLAZ5ZQ%3D%3D', data=json.dumps(json_data1))
+        # res1 = requests.post('powerBI API', data=json.dumps(json_data1))
         # print(res1.status_code)
         # print(json_data)
         # print(json_data1)
