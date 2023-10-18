@@ -1,5 +1,5 @@
-Install Tesseract Installer
+Install Tesseract Installer:
 https://github.com/UB-Mannheim/tesseract/wiki
 
-Install pytessearct library
+Install pytessearct library:
 pip install pytesseract
